@@ -13,18 +13,20 @@ end
 
 root='/'
 
+search_input_field="input[aria-label='Search']"
+
 describe 'Loads up correctly', :type => :feature do
   before :each do
     Capybara.current_driver = :chrome
   end
   it 'Has the expected search input field' do
-    visit( root )
-    search_button_on_page=find(:css, "input[aria-label='Search']")
+    visit ( root )
+    search_button_on_page = find (search_input_field)
     expect(search_button_on_page).to be_true
   end
   it 'Shows results' do
-    visit( root )
-    find(:css, "input[aria-label='Search']").set("123")
+    visit ( root )
+    find(search_input_field).set "123"
     expect(page).to have_content 'results'
   end
 end
