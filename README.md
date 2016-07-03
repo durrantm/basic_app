@@ -14,12 +14,12 @@ Prerequisites:
   `gem install bundler`
 
 - Clone this repo  
-  - `git clone https://github.com/durrantm/basic_app`
+  `git clone https://github.com/durrantm/basic_app`
 
-- Use bundler to install the gems:
-  - `cd basic_app`
-  - `bundle`
+- Use bundler to install the gems:  
+  `cd basic_app`  
+  `bundle`
 
 - To run all the tests:
 
-  - bundle exec rspec spec
+  `bundle exec rspec spec`
