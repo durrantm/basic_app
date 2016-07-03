@@ -16,12 +16,12 @@ describe 'Loads up correctly', :type => :feature do
     Capybara.current_driver = :chrome
   end
   it 'Has the expected search input field' do
-    visit('http://www.google.com')
+    visit('')
     search_button_on_page=find(:css, "input[aria-label='Search']")
     expect(search_button_on_page).to be_true
   end
   it 'Shows results' do
-    visit('http://www.google.com')
+    visit('')
     find(:css, "input[aria-label='Search']").set("123")
     expect(page).to have_content 'results'
   end
