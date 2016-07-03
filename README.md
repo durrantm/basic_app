@@ -3,8 +3,6 @@
 This is the framework template for a rspec-capybara project
 It can be used to start testing any publicly available web site.
 
-Prerequisites:
-
 - Ruby should be installed.  
   I prefer RVM -https://rvm.io/  
   `\curl -sSL https://get.rvm.io | bash`
