@@ -13,8 +13,8 @@ Prerequisites:
   - http://bundler.io/  
   `gem install bundler`
 
-- Clone this repo
-  `git clone https://github.com/durrantm/basic_app`
+- Clone this repo  
+  - `git clone https://github.com/durrantm/basic_app`
 
 - Use bundler to install the gems:
   - `cd basic_app`
