@@ -1,7 +1,7 @@
 # basic_app
 
 This is the framework template for a rspec-capybara project
-It can be used to start testing any publically available web site.
+It can be used to start testing any publicly available web site.
 
 Prerequisites:
 
@@ -17,3 +17,6 @@ Prerequisites:
   - `cd basic_app`
   - `bundle`
 
+- To run all the tests:
+
+  - bundle exec rspec spec
