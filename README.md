@@ -13,7 +13,7 @@ Prerequisites:
   - http://bundler.io/  
   `gem install bundler`
 
-- After cloning the repo:
-  . `cd basic_app`
-  . `bundle`
+- After cloning the repo:  
+  - `cd basic_app`
+  - `bundle`
 
