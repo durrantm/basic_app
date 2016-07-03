@@ -13,6 +13,9 @@ Prerequisites:
   - http://bundler.io/  
   `gem install bundler`
 
+- Clone this repo
+  `git clone https://github.com/durrantm/basic_app`
+
 - After cloning the repo:  
   - `cd basic_app`
   - `bundle`
