@@ -11,17 +11,19 @@ Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
 
+root='/'
+
 describe 'Loads up correctly', :type => :feature do
   before :each do
     Capybara.current_driver = :chrome
   end
   it 'Has the expected search input field' do
-    visit('')
+    visit( root )
     search_button_on_page=find(:css, "input[aria-label='Search']")
     expect(search_button_on_page).to be_true
   end
   it 'Shows results' do
-    visit('')
+    visit( root )
     find(:css, "input[aria-label='Search']").set("123")
     expect(page).to have_content 'results'
   end
