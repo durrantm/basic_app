@@ -21,3 +21,15 @@ It can be used to test any publicly available web site.
 - To run all the tests:
 
   `bundle exec rspec spec`
+
+- To see different examples:
+
+  There are various branches for common examples:
+
+  `master                  # Basic example`  
+
+  `multiple_domains        # Running against multiple domains`  
+
+  `using_page_object       # Using the Page Object pattern`  
+
+  `weather_with_login      # Using a site with authentication`  
