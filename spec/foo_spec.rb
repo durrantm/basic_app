@@ -31,5 +31,13 @@ describe 'Loads up correctly', :type => :feature do
     find('button#LogInBtn').click
     expect(page).to have_selector 'form#loginForm'
   end
+  it 'A login succeeds' do
+    visit ( login_page )
+    fill_in('email', with: 'junk@snap2web.com')
+    fill_in('password', with: 'FAIL')
+    find('button#LogInBtn').click
+    expect(page).to have_content 'My Profile'
+    expect(page).to have_no_selector 'form#loginForm'
+  end
 
 end
